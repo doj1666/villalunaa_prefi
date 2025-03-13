@@ -1,0 +1,126 @@
+body {
+    background-color: #F8F1E5; /* Light beige for a modern feel */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.8;
+}
+
+header {
+    background-color: #4B0082; /* Dark Purple */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #DAA520; /* Gold */
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #FFD700; /* Lighter Gold */
+    color: #4B0082;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.product img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 22px;
+    color: #DAA520;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #4B0082;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.reviews, .faqs, .contact {
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4B0082;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Cookie Popup */
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookie-popup button {
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cookie-popup button:hover {
+    background-color: #FFD700;
+}

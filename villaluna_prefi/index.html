@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dj's DjSneakers</title>
+    
+    <style>
+        body {
+            background-color: #F8F1E5; /* Light beige for a modern feel */
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #4B0082; /* Dark Purple */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #DAA520; /* Gold */
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #FFD700; /* Lighter Gold */
+            color: #4B0082;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            width: 30%;
+            background: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+
+        .product-title {
+            font-size: 22px;
+            color: #DAA520;
+            font-weight: bold;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #4B0082;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .reviews, .faqs, .contact {
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4B0082;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Cookie Popup */
+        .cookie-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .cookie-popup button {
+            background-color: #DAA520;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cookie-popup button:hover {
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Dj's Sneaker Shop</h1>
+    </header>
+
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="products">
+        <h2 class="product-title" style="text-align: center;">Our Best Sellers</h2>
+        <div class="products">
+            <div class="product">
+                <img src="c:\Users\IT-PC1\Downloads\da.jpg" alt="500">
+                <h3 class="product-title">Nike Air Force 1</h3>
+                <p class="product-price">₱5,995.00</p>
+            </div>
+            <div class="product">
+                <img src="c:\Users\IT-PC1\Downloads\dadsad.jpg" alt="500">
+                <h3 class="product-title">Adidas Ultraboost</h3>
+                <p class="product-price">₱8,500.00</p>
+            </div>
+            <div class="product">
+                <img src="c:\Users\IT-PC1\Downloads\skaieowqe.jpg" alt="500">
+                <h3 class="product-title">Puma RS-X</h3>
+                <p class="product-price">₱6,300.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="reviews">
+        <h2>Customer Reviews</h2>
+        <p><strong>Juan Dela Cruz:</strong> "These shoes are amazing! Super comfortable and stylish." ⭐⭐⭐⭐⭐</p>
+        <p><strong>Maria Santos:</strong> "I love the Ultraboost! Great for running and casual wear." ⭐⭐⭐⭐</p>
+        <p><strong>Carlos Mendoza:</strong> "The Puma RS-X is a must-have! Best sneaker I’ve owned." ⭐⭐⭐⭐⭐</p>
+    </div>
+
+    <div class="container" id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <p><strong>Q:</strong> Are these shoes available in different sizes?</p>
+        <p><strong>A:</strong> Yes! We have sizes from 6 to 12.</p>
+
+        <p><strong>Q:</strong> Do you have different color options?</p>
+        <p><strong>A:</strong> Yes! We also have black, red, and blue variants.</p>
+
+        <p><strong>Q:</strong> Do you accept Cash on Delivery (COD)?</p>
+        <p><strong>A:</strong> Yes! We offer COD nationwide.</p>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <strong>support@DjSneakers</strong></p>
+        <p>Phone: <strong>+63 999 471 9808</strong></p>
+        <p>Facebook: <strong>@DjSneakers</strong></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DJ's-Sneakers PH. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Cookie Popup -->
+    <div class="cookie-popup" id="cookiePopup">
+        <p>We use cookies to improve your shopping experience. By continuing, you agree to our <a href="#" style="color: #FFD700;">cookie policy</a>.</p>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+
+    <script>
+        function checkCookies() {
+            if (!localStorage.getItem("cookiesAccepted")) {
+                document.getElementById("cookiePopup").style.display = "block";
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookiePopup").style.display = "none";
+        }
+
+        window.onload = checkCookies;
+    </script>
+
+</body>
+</html>
+
